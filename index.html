@@ -17,7 +17,7 @@
   <script src="js/organograma-incorporado.js"></script>
 </head>
 <body>
-  <!-- Identificação no topo e retorno ao site. target="_top": dentro de um quadro, o link sai dele. -->
+  <!-- Identificação no topo e retorno à página anterior do navegador. -->
   <header class="topo">
     <div class="topo-conteudo">
       <div class="topo-identidade">
@@ -27,7 +27,7 @@
           <h1>Organograma interativo</h1>
         </div>
       </div>
-      <a class="topo-voltar" href="https://www.goiania.go.leg.br/" target="_top">&larr; Voltar ao site</a>
+      <a class="topo-voltar" href="#" onclick="history.back(); return false;">&larr; Voltar ao site</a>
     </div>
   </header>
 
@@ -41,7 +41,7 @@
       </div>
       <div class="barra-busca">
         <label class="busca-rotulo" for="busca-campo">Buscar unidade</label>
-        <input id="busca-campo" class="busca-campo" type="search" placeholder="Nome, sigla ou tipo" autocomplete="off" aria-haspopup="listbox">
+        <input id="busca-campo" class="busca-campo" type="search" placeholder="Nome ou sigla" autocomplete="off" aria-haspopup="listbox">
         <ul id="busca-lista" class="busca-lista" hidden></ul>
       </div>
     </div>
